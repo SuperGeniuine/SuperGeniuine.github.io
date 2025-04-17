@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
     
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
     <meta name="description" content="" />
     <meta name="hexo-theme-A4" content="v1.9.8" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>Hexo</title>
+    <link rel="alternate icon" type="image/webp" href="/img/flower.png">
+    <title>和而不同</title>
 
     
         
@@ -83,6 +83,171 @@
 
 
     
+    <style>
+        :root {
+            --waline-theme-color: #323e74; 
+            --waline-color: #323e74; 
+            --waline-border-color: #323e74; 
+            --waline-white: #323e74; 
+            --waline-bgcolor-light: #f2fafc;  
+        }
+        body {
+            color: #323e74;
+            background: #eaeae8;
+        }
+        .post-md code {
+            background: #e7f7f3;
+            color: #7f688d; 
+        }
+        .post-md pre, .post-md .highlight {
+            background: #e7f7f3;
+            color: #7f688d; 
+        }
+        pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+            color: #323e74;
+        }
+        pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+            color: #323e74;
+        }
+        .year-font-color {
+            color: #323e74 !important;
+        }
+        .wl-card span.wl-nick {
+            color: #323e74; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #323e74;
+            color: #323e74; 
+        }
+        .wl-btn {
+            border: 1px solid #323e74; 
+            color:  #323e74;  
+        }
+        .wl-btn.primary {
+            color: #f2fafc; 
+        }
+        .wl-header label {
+            color: #323e74;
+        }
+        a {
+            color: #7f688d;
+        }
+
+        .post-md a {
+            color: #7f688d;
+        }
+
+        .nav li a {
+            color: #7f688d;
+        }
+
+        .archive-main a:link {
+            color: #7f688d;
+        }
+        .archive-main a:visited {
+            color: #767c7c; 
+        }
+
+        .archive li span {
+            color: #323e74;
+        }
+
+        .post-main-title {
+            color: #323e74;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #323e74;
+        }
+
+        [data-waline] p {
+            color: #323e74;
+        }
+        [data-waline] a {
+            color: #323e74;
+        } 
+        .wl-sort li.active {
+            color: #323e74;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #f2fafc;
+        }
+
+        .paper {
+            background: #eaeae8;
+        }
+
+        .index-main {
+            background: #f2fafc;
+        }
+
+        .paper-main {
+            background: #f2fafc;
+        }
+
+        .wl-panel {
+            background: #f2fafc;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #f2fafc;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #f2fafc;
+        }
+
+        .post-md table tr:nth-child(odd) td {
+            background: #f2fafc;
+        }
+
+        .post-md table tr:nth-child(even) td {
+            background: #f2fafc;
+        }
+
+    
+        .progress-wrap::after {
+            color: #323e74; /* 箭头的颜色 */
+        }
+        .progress-wrap svg.progress-circle path {
+	        stroke: #323e74; /* 边框的颜色 */
+        }
+        .progress-wrap::before {
+	        background-image: linear-gradient(298deg, #7f688d, #7f688d); /* 鼠标滑过的箭头颜色 */
+         }
+
+        .return-to-last-progress-wrap::after {
+            color: #323e74; /* 箭头的颜色 */
+        }
+        .return-to-last-progress-wrap svg.progress-circle path {
+	        stroke: #323e74; /* 边框的颜色 */
+        }
+        .return-to-last-progress-wrap::before {
+	        background-image: linear-gradient(298deg, #7f688d, #7f688d); /* 鼠标滑过的箭头颜色 */
+         }
+
+         .left-toc-container::-webkit-scrollbar-thumb {
+            background-color: #323e74; /* 设置滚动条拖动块的颜色 */
+        }
+
+        .bs-docs-sidebar .nav>.active>a,
+        .bs-docs-sidebar .nav>li>a:hover,
+        .bs-docs-sidebar .nav>li>a:focus {
+            color: #7f688d;
+            border-left-color: #7f688d;
+        }
+        .bs-docs-sidebar .nav>li>a {
+            color:  #323e74;
+        }
+    </style>
+
     
 
     
@@ -96,7 +261,7 @@
                 left: '42px', // default: 'unset'
                 time: '0.3s', // default: '0.3s'
                 mixColor: '#fff', // default: '#fff'
-                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
+                backgroundColor: ' #eaeae8  ',  // default: '#fff'
                 buttonColorDark: '#100f2c',  // default: '#100f2c'
                 buttonColorLight: '#fff', // default: '#fff'
                 saveInCookies: true, // default: true,
@@ -124,8 +289,16 @@
 
     <div style="text-align: left;">
 
-        <a class="index-logo" href="/">Hexo</a>
+        <a class="index-logo" href="/">和而不同</a>
         <div style="margin-bottom: 12px;"> 
+            
+                
+                    首页
+                
+            
+                
+                    &nbsp / &nbsp<a href="/list/">文章</a>
+                
             
         </div>
     </div>
@@ -135,7 +308,20 @@
     
        
             <div class="post-md">
-                <div class=".article-gallery"></div>
+                <div class=".article-gallery"><h3 id="世界末日的前一天"><a href="#世界末日的前一天" class="headerlink" title="世界末日的前一天"></a>世界末日的前一天</h3><h3 id="清晨6-00：最后一次日出"><a href="#清晨6-00：最后一次日出" class="headerlink" title="清晨6:00：最后一次日出"></a><strong>清晨6:00：最后一次日出</strong></h3><p>东方的天际泛起鱼肚白，霞光穿透稀薄的云层，将城市镀上一层琥珀色。公园长椅上挤满了裹着毛毯的人，他们仰着头，像朝圣者凝视神迹般注视着太阳——这是地球收到的最后一封来自恒星的告别信。<br>一位天体物理学家在社交平台写道：“太阳的氢核聚变已持续46亿年，而我们只剩下18小时。讽刺的是，毁灭人类的并非太阳衰老，而是直径3公里的小行星2019 KT4。”<br>咖啡店仍飘着拿铁香气，只是奶泡拉花变成了“Goodbye”。街角的面包店挂出“免费领取”的牌子，店主把最后一批可颂堆在橱窗前，面粉袋上的生产日期是旧世界的刻度。</p>
+<hr>
+<h3 id="上午10-00：数据洪流中的文明存档"><a href="#上午10-00：数据洪流中的文明存档" class="headerlink" title="上午10:00：数据洪流中的文明存档"></a><strong>上午10:00：数据洪流中的文明存档</strong></h3><p>全球数据中心进入超频状态，比特币矿机停止哈希碰撞，转而将《蒙娜丽莎》的像素矩阵刻进区块链。挪威种子库的钢制大门永久闭合，10亿粒种子在-18℃的黑暗中沉睡，等待可能永远不会到来的春天。<br>东京秋叶原的漫画店里，人们用AR眼镜扫描《进击的巨人》最终卷，数字典藏库瞬间涌入2PB的同人作品。一个程序员在GitHub提交最后代码：“修复了世界末日的时区BUG。”</p>
+<hr>
+<h3 id="下午15-00：重力失效前的狂欢"><a href="#下午15-00：重力失效前的狂欢" class="headerlink" title="下午15:00：重力失效前的狂欢"></a><strong>下午15:00：重力失效前的狂欢</strong></h3><p>赤道附近的离心力开始撕裂大气层，里约热内卢的基督像手掌渗出锈迹。物理定律变得暧昧不清，巴黎圣母院的玫瑰窗在失重状态下悬浮，彩色玻璃折射出支离破碎的圣经故事。<br>纽约时代广场的跨年水晶球提前坠落，碎片被抢购一空——这是最昂贵的末日纪念品。电子货币失去意义，有人用毕加索真迹交换儿童画册，梵高的《星空》被涂改成小行星撞击地球的预言之作。</p>
+<hr>
+<h3 id="傍晚19-00：告别仪式的物种多样性"><a href="#傍晚19-00：告别仪式的物种多样性" class="headerlink" title="傍晚19:00：告别仪式的物种多样性"></a><strong>傍晚19:00：告别仪式的物种多样性</strong></h3><p>南极科考站传来最后讯息：企鹅群突然转向内陆迁徙，它们啄食冰层下的远古微生物，或许在寻找重启生态圈的密码。宠物收容所排起长队，人们归还二十年前走失的狗，为它戴上镶着家族照片的项圈。<br>亚马逊雨林深处，85岁的萨满点燃神圣烟斗，烟雾幻化成美洲豹的形状。他哼唱着祖灵之歌，直到监测部落语言的AI系统因断电停止录音。</p>
+<hr>
+<h3 id="深夜23-30：寂静中的文明终章"><a href="#深夜23-30：寂静中的文明终章" class="headerlink" title="深夜23:30：寂静中的文明终章"></a><strong>深夜23:30：寂静中的文明终章</strong></h3><p>所有核电站启动安全协议，冷却塔蒸腾的水雾凝结成酸雨。瑞士地下掩体的防爆门缓缓闭合，门缝里卡着半本《莎士比亚全集》。国际空间站的宇航员关闭直播镜头，在舷窗写下“我们曾如此美丽”。<br>某个地下室亮着微光，少年用老式投影仪播放《2001太空漫游》，蓝色多瑙河旋律中，人类制造的探测器仍在柯伊伯带飞行，带着镀金唱片里的婴儿啼哭与鲸鱼歌声。</p>
+<hr>
+<h3 id="午夜00-00：没有到来的毁灭"><a href="#午夜00-00：没有到来的毁灭" class="headerlink" title="午夜00:00：没有到来的毁灭"></a><strong>午夜00:00：没有到来的毁灭</strong></h3><p>当时针与分针重合的瞬间，墨西哥天文台的射电望远镜突然接收到异常频率。小行星轨道诡异地偏转0.3度，擦过月球环影消失在深空。<br>但没有人欢呼——银行账户的冻结程序无法撤回，教堂忏悔室挤满沉默者，超市货架永远保持着空荡状态。最深的末日不是天体撞击，而是人类在等待毁灭时，亲手 dismantle（拆解）了延续千年的文明契约。</p>
+<hr>
+<p><strong>后记</strong><br>当地球继续公转，人们发现真正的末日预言家是1968年的科幻作家：他在小说里写过，“当全人类共同凝视深渊时，深渊会因羞愧而转身离去”。晨光再次降临，公园长椅上遗落着写满数学公式的纸巾，某个未知领域的新定律正在诞生。</p>
+</div>
             </div>
     
 </div> 
@@ -149,13 +335,6 @@
         <span>本站总字数：75</span>
         
         
-            <div class="footer-last-span-right">
-        
-        
-                <span id="busuanzi_container_site_pv" class="">
-                    本站总访问：<span id="busuanzi_value_site_pv"></span>次
-                </span>
-            </div>
         
     </div>
 
@@ -166,7 +345,7 @@
          
             
                 
-                <span class="index-footer-last-span">Email:<a href="mailto:123456789@gmail.com" title="123456789@gmail.com">123456789@gmail.com</a></span>
+                <span class="index-footer-last-span">Email:<a href="mailto:2857457594@qq.com" title="2857457594@qq.com">2857457594@qq.com</a></span>
             
         
     
